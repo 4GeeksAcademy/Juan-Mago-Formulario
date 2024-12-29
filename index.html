@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+     <link rel="stylesheet" href="style.css">
+     <title>Formulario</title>
+  </head>
+  <body>
+    <div class="father p-5">
+
+        <div class="p-2 titulo bg-light"><h2>Payment form example</h2></div>
+
+        <div class="bg-light subtitulo p-3">
+            <div style="width:95%;">
+            <h4 class="p-3">Some fields are missing</h4>
+            </div>
+        </div>
+
+        <div class="row gx-0 d-flex bordes " >
+            
+            <div class="col-md-5 col-12 p-2 " >
+                <div class=" border bg-light" style=" border: 1px solid black;">
+                    <label style="color: black;" for="">Card #</label>
+                    <input type="number" style="width: 100%;" placeholder="xxxxxxxxxxxxxxxx">
+                </div>
+            </div>
+            <div class="col-md-3 col-12 p-2 " >
+                <div class=" border bg-light" style="width: 100%;" >
+                    <label style="color: black;" for="">CVC #</label>
+                    <input type="number" style="width: 100%; ;" placeholder="0000">
+                </div>
+            </div>
+            <div class="col-md-4 col-12 p-2 " >
+                <div class=" border bg-light" style="overflow: hidden;" style="width: 100%;">
+                    <label style="color: black;" for="">Amount</label>
+                    <input type="number" style="width: 100%;;" placeholder="Amount">
+                </div>
+           
+        </div>
+
+        <div class="row gx-0 d-flex  " >
+            
+            <div class="col-md-6 col-12 p-2 " >
+                <div class=" border bg-light " style=" border: 1px solid black;">
+                    <label style="color: black;" for="">First Name</label>
+                    <input type="text" style="width: 100%; ;" placeholder="">
+                </div>
+            </div>
+            <div class="col-md-6 col-12 p-2 " >
+                <div class=" border bg-light" style="width: 100%;" >
+                    <label style="color: black;" for="">Last Name</label>
+                    <input type="text" style="width: 100%; ;" placeholder="">
+                </div>
+            </div>
+   
+        </div>
+
+
+        <div class="row gx-0 d-flex " >
+            
+            <div class="col-md-6 col-12 p-2" >
+                <div class=" border bg-light " style=" border: 1px solid black;">
+                    <label style="color: black;" for="">City</label>
+                    <input type="text" style="width: 100%; ;" placeholder="">
+                </div>
+            </div>
+            <div class="col-md-3 col-12 p-2 " >
+                <div class=" border bg-light" style="width: 100%;" >
+                    <label style="color: black; width: 100%;" for="states">State</label>
+                    <select name="state" id="states"  style="width: 100%;" >
+                        <option disabled selected>Pick a state</option>
+                        <option value="Sucre">Sucre</option>
+                        <option value="Anzoategui">Anzoategui</option>
+                        <option value="Monagas">Monagas</option>
+                        <option value="Zulia">Zulia</option>
+                        <option value="Carabobo">Carabobo</option>
+                        <option value="Lara">Lara</option>
+                        <option value="La Guaira">La Guaira</option>
+                        <option value="Bolivar">Bolivar</option>
+                        <option value="Tachira">Tachira</option>
+                        <option value="Merida">Merida</option>
+                      </select>
+                    
+                 
+                </div>
+            </div>
+            <div class="col-md-3 col-12 p-2 " >
+                <div class=" border bg-light" style="overflow: hidden;" style="width: 100%;">
+                    <label style="color: black;" for="">Postal</label>
+                    <input type="number" style="width: 100%;;" placeholder="">
+                </div>
+           
+        </div>
+
+        <div class="row gx-0 d-flex" >
+            
+            <div class="col-md-6 col-12 p-2 " >
+                <div class=" border bg-light p-3" style=" border: 1px solid black;">
+                    <label class="etiquetapago" style="color: black; width: 100%;" for="">We Accept:</label>
+
+                     <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">
+                            <i class="fa fa-cc-mastercard" style="font-size:30px"></i>
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">
+                            <i class="fa fa-cc-visa" style="font-size:30px"></i>
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        <label class="form-check-label" for="inlineRadio3">
+                            <i class="fa fa-cc-amex" style="font-size:30px"></i>
+                        </label>
+                      </div>
+
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        <label class="form-check-label" for="inlineRadio3">
+                            <i class="fa fa-cc-paypal" style='font-size:30px'></i>
+                        </label>
+                           
+                      </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-6 col-12 p-2 " >
+                <div class=" border bg-light" style="width: 100%;" >
+                    <label style="color: black;" for="">Message</label>
+                    <textarea name="" id="" style="width: 100%;"></textarea>
+                    <label style="color: black; font-size: 10px;" for="">Add any notes here</label>
+                </div>
+            </div>
+   
+        </div>
+
+        <div class="row gx-0 d-flex p-4 botones" >
+            <button class="col-md-1 col-12 p-1 btn btn-secondary  ">Cancel</button>
+            <button class="col-md-1 col-12 p-1 send btn btn-primary " >Send</button>
+              
+        </div>
+
+
+    </div>
+
+    </div>
+
+ </body>
+</html>
